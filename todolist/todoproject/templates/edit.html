@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<nav class="navbar navbar-light bg-dark">
+  <a style="color:white" class="navbar-brand" href="#">
+        <b>TODO LIST</b>
+  </a>
+</nav>
+<form style="padding:25px" method='post'>
+
+    {% csrf_token %}
+    <h3>UPDATE</h3>
+     {{form.as_p}}
+<input type="submit">
+</form>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<nav class="navbar navbar-light bg-dark">
+  <a style="color:white" class="navbar-brand" href="#">
+        <b>TODO LIST</b>
+  </a>
+</nav>
+<form method="post" style="padding:25px">
+    {% csrf_token %}
+    <h5><b>Are You Sure To Delete The Task ?</b></h5>
+<input type="submit" value="Confirm">
+
+</form>
+{% endblock %}
